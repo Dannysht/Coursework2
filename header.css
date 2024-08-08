@@ -1,0 +1,108 @@
+header {
+    background-color: #28a745;
+    padding: 10px 0;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a,
+nav ul li button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+    background-color: #1e7e34; 
+}
+
+nav ul li .search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-item {
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+
+nav ul li .search-form input[type="text"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+nav ul li .search-form button {
+    padding: 10px;
+    background-color: #1e7e34;
+    cursor: pointer;
+    border: none;
+}
+
+nav ul li .search-form button:hover {
+    background-color: #155d27; 
+}
+
+
+nav ul {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    nav ul li .search-form input[type="text"] {
+        width: 150px;
+    }
+}
